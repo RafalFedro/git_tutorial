@@ -44,9 +44,10 @@ puts markdown.to_html
 ## Charts
 Simple pipeline:
 ```mermaid
-graph TD;
-	A-->B;
-	A-->C;
+graph LR;
+	Data-->Split;
+	Split-->B;
+	Split-->C;
 	B-->D;
 	C-->D;
 ```
